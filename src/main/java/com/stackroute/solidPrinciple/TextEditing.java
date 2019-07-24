@@ -1,6 +1,9 @@
 package com.stackroute.solidPrinciple;
 
-class TextEditing extends Text{
+import java.util.Scanner;
+
+class TextEditing extends Text {
+    Scanner scanner = new Scanner((System.in));
 
     public void letterToUpperCase() {
         System.out.print("Making uppercase to your text\t");
@@ -9,9 +12,12 @@ class TextEditing extends Text{
 
 
     }
-    void findSubTextAndDelete(String textString)
-    {
+
+    void findSubTextAndDelete(String textString) {
+
         System.out.print("Deleting your substring in the text:\t");
-        System.out.println(text.replaceAll(text," "));
+        //System.out.println("Enter removable part");
+        textString = scanner.nextLine();
+        System.out.println(text.replaceAll(textString, ""));
     }
 }
