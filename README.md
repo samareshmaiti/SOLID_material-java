@@ -1,5 +1,9 @@
-1. Consider the design of the following class, Text that models an editor or editing text and
-printing text.
+THis is the first problem of SOLID material design in Java.All the methods are given and we have to arrange them.
+The below is the given problem statement.
+
+ Consider the design of the following class, Text that models an editor or editing text and
+printing text.Give your comments on the design of this class.
+
 class Text {
 String text;
 String author;
